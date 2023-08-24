@@ -16,27 +16,29 @@ hero:
   tagline: /简单/易用/全面/
   image:
     # 首页右边的图片
-    src: https://lihong.org.cn/knot-react/img/logo.png
+    src: https://lihong.org.cn/knot-vue/img/logo.png
     # 图片的描述
     alt: logo
   # 按钮相关
   actions:
     - theme: brand
       text: 快速开始
-      link: /column/views/guide
+      link: /pages/guide/start/
     - theme: alt
       text: 组件
       link: /column/Growing/
 # 按钮下方的描述
 features:
-  - icon: 🤹♀️
+  - icon: 🤹
     title: 简单
     details: A component library for Vue。
-    link: /column/views/guide
-  - icon: 👩🎨
+    link: /
+  - icon: 🎨
     title: 易用
     details: A component library for Vue。
+    link: /
   - icon: 🧩
     title: 全面
     details: A component library for Vue。
+    link: /
 ---
