@@ -22,7 +22,7 @@ hero:
   # 按钮相关
   actions:
     - theme: brand
-      text: 快速开始
+      text: 指南
       link: /pages/guide/start/
     - theme: alt
       text: 组件

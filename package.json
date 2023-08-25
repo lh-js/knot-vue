@@ -1,7 +1,7 @@
 {
   "name": "knot-vue",
-  "version": "0.0.1-beta.1",
-  "private": true,
+  "version": "0.0.4-beta.1",
+  "private": false,
   "type": "module",
   "module": "umd/es/index.mjs",
   "types": "umd/es/index.d.ts",
@@ -21,6 +21,7 @@
     "@types/marked": "^5.0.1",
     "gray-matter": "^4.0.3",
     "highlight.js": "^11.8.0",
+    "knot-vue": "^0.0.4-beta.1",
     "marked": "^7.0.4",
     "pinia": "^2.1.6",
     "sass": "^1.66.1",
@@ -44,5 +45,22 @@
     "vite-plugin-dts": "1.4.1",
     "vitest": "^0.34.2",
     "vue-tsc": "^1.8.8"
-  }
+  },
+  "authors": [
+    "lh <2731164534@qq.com>"
+  ],
+  "license": "MIT",
+  "files": [
+    "umd"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "knot-vue",
+    "ui",
+    "components",
+    "vue",
+    "typescript"
+  ]
 }

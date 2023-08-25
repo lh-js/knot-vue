@@ -1,27 +1,17 @@
 import { DefaultTheme } from 'vitepress';
 export const sidebar: DefaultTheme.Sidebar = {
     // /column/Algothm/表示对这个文件夹下的所有md文件做侧边栏配置
-    '/pages/guide/start/': [
+    '/pages/guide': [
         // 第一部分
         {
-            text: '快速开始',
+            text: '指南',
             items: [
                 {
-                    text: '相关技术',
-                    link: '/pages/guide/start/#相关技术'
+                    text: '快速开始',
+                    link: '/pages/guide/start/'
                 }
             ]
         },
-        // 第二部分
-        {
-            text: '使用',
-            items: [
-                {
-                    text: '安装',
-                    link: '/pages/guide/start/#安装'
-                }
-            ]
-        }
     ],
     '/pages/components/': [
         {

@@ -1,12 +1,12 @@
 import { DefaultTheme } from 'vitepress';
 export const nav: DefaultTheme.NavItem[] = [
-  // {
-  //   text: '首页',
-  //   link: '/' // 表示docs/index.md
-  // },
+  {
+    text: '指南',
+    link: '/pages/guide/start/'
+  },
   {
     text: '组件',
-    link: '/pages/components/hello/' 
+    link: '/pages/components/hello/'
     // items: [
     //   {
     //     text: '',
@@ -20,10 +20,10 @@ export const nav: DefaultTheme.NavItem[] = [
   },
   {
     text: 'hooks',
-    link: '/hooks' 
+    link: '/hooks'
   },
   {
     text: 'utils',
-    link: '/utils' 
+    link: '/utils'
   }
 ];
