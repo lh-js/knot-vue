@@ -26,7 +26,7 @@ hero:
       link: /pages/guide/start/
     - theme: alt
       text: 组件
-      link: /column/Growing/
+      link: /pages/components/hello/
 # 按钮下方的描述
 features:
   - icon: 🤹

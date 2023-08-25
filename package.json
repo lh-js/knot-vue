@@ -1,11 +1,14 @@
 {
   "name": "knot-vue",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.1",
   "private": true,
   "type": "module",
+  "module": "umd/es/index.mjs",
+  "types": "umd/es/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
+    "build:package": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest",
     "build-only": "vite build",
@@ -15,8 +18,13 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false"
   },
   "dependencies": {
+    "@types/marked": "^5.0.1",
     "gray-matter": "^4.0.3",
+    "highlight.js": "^11.8.0",
+    "marked": "^7.0.4",
     "pinia": "^2.1.6",
+    "sass": "^1.66.1",
+    "unplugin-vue-define-options": "1.2.1",
     "vitepress": "^1.0.0-rc.4",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
@@ -33,6 +41,7 @@
     "npm-run-all": "^4.1.5",
     "typescript": "~5.1.6",
     "vite": "^4.4.9",
+    "vite-plugin-dts": "1.4.1",
     "vitest": "^0.34.2",
     "vue-tsc": "^1.8.8"
   }
