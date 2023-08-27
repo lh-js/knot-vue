@@ -45,4 +45,4 @@ jobs:
         with:
           branch: build # 打包的内容放到build分支下
           folder: docs/.vitepress/dist # 你打包后存放的文件
-          ACCESS_TOKEN: ${{secrets.LHUIBUILD}}
+          ACCESS_TOKEN: ${{secrets.PROJECT_TOKEN}}
