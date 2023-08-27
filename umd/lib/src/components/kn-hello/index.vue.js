@@ -1,1 +1,0 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("vue"),t=require("../../../_virtual/_plugin-vue_export-helper.js"),l={};function n(o,u){return e.openBlock(),e.createElementBlock("h4",null,"hello knot")}const r=t.default(l,[["render",n]]);exports.default=r;
