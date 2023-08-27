@@ -23,5 +23,14 @@ export const sidebar: DefaultTheme.Sidebar = {
                 }
             ]
         },
+        {
+            text: '通用组件',
+            items: [
+                {
+                    text: 'button',
+                    link: '/pages/components/button/'
+                }
+            ]
+        },
     ]
 };

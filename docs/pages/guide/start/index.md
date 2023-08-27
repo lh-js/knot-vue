@@ -24,33 +24,33 @@ yarn add knot-vue
 // main.ts
 
 import KnotVue from 'knot-vue'
-
+import 'knot-vue/umd/es/style.css'
 const app = createApp(App)
 
 app.use(KnotVue)
 app.mount('#app')
 ```
 
+```vue
+// index.vue
+
+<template>
+  <kn-hello />
+</template>
+```
+
 ### 按需引入
 
+注：按需引入记得引入样式
+
 ```vue
+// index.vue
+
 <template>
-  <KnHello />
+  <kn-hello />
 </template>
 
-<script>
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 import { KnHello } from 'knot-vue'
-
-export default defineComponent({
-  components: {
-    KnHello,
-  },
-  setup() {
-    return {
-      
-    }
-  },
-})
 </script>
 ```
