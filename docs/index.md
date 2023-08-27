@@ -13,7 +13,7 @@ lastUpdated: true
 hero:
   name: knot vue
   text: A component library for Vue
-  tagline: /简单/易用/全面/
+  tagline: /创意/易用/丰富/
   image:
     # 首页右边的图片
     src: https://lihong.org.cn/knot-vue/img/logo.png
@@ -29,16 +29,16 @@ hero:
       link: /pages/components/hello/
 # 按钮下方的描述
 features:
-  - icon: 🤹
-    title: 简单
-    details: A component library for Vue。
+  - icon: 💡
+    title: 创意
+    details: originality
     link: /
   - icon: 🎨
     title: 易用
-    details: A component library for Vue。
+    details: Easy To Use
     link: /
   - icon: 🧩
-    title: 全面
-    details: A component library for Vue。
+    title: 丰富
+    details: richness
     link: /
 ---

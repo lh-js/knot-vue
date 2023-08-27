@@ -17,6 +17,7 @@ withDefaults(defineProps<MyButtonProps>(), {
   height: 50px;
   background: green;
   color: #ffffff;
+  border-radius: 2px;
 }
 </style>
   
