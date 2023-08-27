@@ -28,6 +28,10 @@ jobs:
       - name: dependencies install
         run: npm install
 
+      # 组件库打包
+      - name: components pack
+        run: npm run build:package
+
       # 发包到npm
       - name: publish to npm
         run: npm publish
