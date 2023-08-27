@@ -18,7 +18,6 @@ cache
 /cypress/videos/
 /cypress/screenshots/
 
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -28,3 +27,6 @@ cache
 *.njsproj
 *.sln
 *.sw?
+
+#不忽略
+!/docs/node_modules
