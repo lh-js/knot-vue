@@ -10,8 +10,7 @@
 </ComponentCard>
 
 <script setup>
-import data from '../../../../src/views/use-hello/index.vue?raw'
+import data from '../../../../src/views/useHello/index.vue?raw'
 import { useHello } from 'knot-vue'
 const hello = useHello()
 </script>
-
