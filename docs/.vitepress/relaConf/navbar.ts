@@ -24,6 +24,6 @@ export const nav: DefaultTheme.NavItem[] = [
   },
   {
     text: 'utils',
-    link: '/utils'
+    link: '/pages/utils/hello/'
   }
 ];

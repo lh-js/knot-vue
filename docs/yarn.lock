@@ -3,4 +3,5 @@
 
 
 "knot-vue@file:../src":
-  version "1.0.0"
+  "resolved" "file:../src"
+  "version" "1.0.0"

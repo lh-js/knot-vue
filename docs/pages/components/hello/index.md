@@ -10,5 +10,5 @@
 </ComponentCard>
 
 <script setup>
-import data from '../../../../src/views/hello/index.vue?raw'
+import data from '../../../../src/views/kn-hello/index.vue?raw'
 </script>

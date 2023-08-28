@@ -1,7 +1,10 @@
 <template>
-  <kn-hello />
+  {{ data }}
 </template>
-
+  
 <script setup lang="ts">
-import { KnHello } from "knot-vue";
+import { hello } from "knot-vue";
+
+const data = hello();
 </script>
+  
