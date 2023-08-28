@@ -3,7 +3,7 @@ import { type App } from "vue";
 import KnButton from "./src/components/kn-button/index.vue";
 import KnHello from './src/components/kn-hello/index.vue';
 //hooks
-import useHello from "./src/hooks/use-hello/index";
+import useHello from "./src/hooks/useHello/index";
 //utils
 import hello from "./src/utils/hello";
 

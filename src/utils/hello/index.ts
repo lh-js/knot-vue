@@ -1,5 +1,5 @@
 const hello = () => {
-  return 'hello knot!';
+  return 'hello knot';
 };
 
 export default hello;
