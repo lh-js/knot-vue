@@ -32,5 +32,16 @@ export const sidebar: DefaultTheme.Sidebar = {
                 }
             ]
         },
+    ],
+    '/pages/hooks/': [
+        {
+            text: '欢迎',
+            items: [
+                {
+                    text: 'useHello',
+                    link: '/pages/hooks/useHello/'
+                }
+            ]
+        },
     ]
 };

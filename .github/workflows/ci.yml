@@ -38,6 +38,12 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
+      # 安装文档依赖
+      - name: dependencies install
+        run: cd docs |
+         npm install |
+         cd ../
+
       # 打包代码
       - name: Build Project
         run: npm run docs:build

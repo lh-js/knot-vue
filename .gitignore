@@ -30,4 +30,3 @@ umd
 *.sw?
 
 #不忽略
-!/docs/node_modules

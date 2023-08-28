@@ -20,7 +20,7 @@ export const nav: DefaultTheme.NavItem[] = [
   },
   {
     text: 'hooks',
-    link: '/hooks'
+    link: '/pages/hooks/useHello/'
   },
   {
     text: 'utils',
