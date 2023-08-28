@@ -1,4 +1,4 @@
-import"./chunks/index.vue_vue_type_style_index_0_scoped_9f03c522_lang.4ed993c7.js";import{K as l,o as s,c as r,O as c,w as i,l as a,k as e,a as t,t as d}from"./chunks/framework.f50d4957.js";const h=()=>"hello knot!",p=`<template>
+import"./chunks/index.vue_vue_type_style_index_0_scoped_9f03c522_lang.4ed993c7.js";import{K as l,o as s,c as r,O as c,w as i,l as a,k as e,a as t,t as d}from"./chunks/framework.f50d4957.js";const h=()=>"hello knot",p=`<template>
   {{ data }}
 </template>
   
