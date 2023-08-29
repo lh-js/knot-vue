@@ -6,26 +6,34 @@
 
 ## 安装
 
-<CodeGroup>
-  <div title="npm" active>
+<CodeGroup :codeTabs="['npm','yarn']">
+<template #npm>
 
 ```sh
 # install in your project
+
 npm i knot-vue
 ```
-</div>
-<div title="yarn">
+
+</template>
+<template #yarn>
 
 ```sh
 # install in your project
+
 yarn add knot-vue
 ```
-</div>
+
+</template>
+
 </CodeGroup>
 
 ## 使用示例
 
 ### 全局引入
+
+<CodeGroup :codeTabs="['main.ts','index.vue']">
+<template #main.ts>
 
 ```ts
 // main.ts
@@ -38,6 +46,9 @@ app.use(KnotVue)
 app.mount('#app')
 ```
 
+</template>
+<template #index.vue>
+
 ```vue
 // index.vue
 
@@ -46,9 +57,27 @@ app.mount('#app')
 </template>
 ```
 
+</template>
+
+</CodeGroup>
+
 ### 按需引入
 
 注：按需引入记得引入样式
+<CodeGroup :codeTabs="['main.ts','index.vue']">
+<template #main.ts>
+
+```ts
+// main.ts
+
+import 'knot-vue/umd/es/style.css'
+const app = createApp(App)
+
+app.mount('#app')
+```
+
+</template>
+<template #index.vue>
 
 ```vue
 // index.vue
@@ -61,3 +90,7 @@ app.mount('#app')
 import { KnHello } from 'knot-vue'
 </script>
 ```
+
+</template>
+
+</CodeGroup>

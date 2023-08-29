@@ -15,8 +15,3 @@ const props = defineProps({
 const emit = defineEmits(["update:modelValue"]);
 const model = useVModel(props, "modelValue", emit);
 </script>
-<style scoped>
-input {
-  border: 1px solid;
-}
-</style>

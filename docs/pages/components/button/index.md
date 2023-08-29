@@ -15,12 +15,13 @@
 </template>
 
 <script setup lang="ts">
-import { KnButton } from "knot-vue";
+import { KnButton } from 'knot-vue'
 </script>
 ```
+
 </template>
 </ComponentCard>
 
 <script setup>
-import data from '../../../../src/views/kn-button/index.vue?raw'
+
 </script>

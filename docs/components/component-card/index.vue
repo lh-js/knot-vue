@@ -7,8 +7,7 @@
       <show-code v-if="isShowCode" @click="codeClick(false)" />
       <hide-code v-else @click="codeClick(true)" />
     </div>
-    <div :class="[{ 'code-show': isShowCode }, 'code-box']">
-      <!-- <div v-html="marked(props.code)"></div> -->
+    <div :class="[{ 'code-show': isShowCode }, 'code-box']" ref="codeBox">
       <slot name="code"></slot>
     </div>
   </div>
@@ -20,21 +19,33 @@ import HideCode from "./icon/hide-code/index.vue";
 import { ref } from "vue";
 
 const isShowCode = ref(false);
+const codeBox = ref<any>(null);
 
 const codeClick = (value: boolean) => {
   isShowCode.value = value;
-  const codeBox: any = document.querySelector(".code-box");
-  if (!codeBox) return;
+  if (!codeBox.value) return;
   if (!value) {
-    codeBox.style.height = 0;
+    const { height } = codeBox.value.getBoundingClientRect();
+    codeBox.value.style.height = `${height}px`;
+    codeBox.value.offsetHeight;
+    codeBox.value.style.height = 0;
     return;
   }
-  codeBox.style.height = "auto";
-  const { height } = codeBox.getBoundingClientRect();
-  codeBox.style.height = 0;
-  codeBox.offsetHeight;
-  codeBox.style.height = `${height}px`;
+  codeBox.value.style.height = "auto";
+  const { height } = codeBox.value.getBoundingClientRect();
+  codeBox.value.style.height = 0;
+  codeBox.value.offsetHeight;
+  codeBox.value.style.height = `${height}px`;
 };
+
+const autoHeight = () => {
+  codeBox.value.style.height = "auto";
+};
+
+//暴露state和play方法
+defineExpose({
+  autoHeight,
+});
 </script>
 <style lang="scss" scoped>
 .component-card {

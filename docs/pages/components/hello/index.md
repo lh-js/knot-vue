@@ -10,18 +10,19 @@
 
 <template #code>
 
-```vue 
+```vue
 <template>
   <kn-hello />
 </template>
 
 <script setup lang="ts">
-import { KnHello } from "knot-vue";
+import { KnHello } from 'knot-vue'
 </script>
 ```
+
 </template>
 </ComponentCard>
 
 <script setup>
-import data from '../../../../src/views/kn-hello/index.vue?raw'
+
 </script>
