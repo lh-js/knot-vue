@@ -1,6 +1,6 @@
 {
   "name": "knot-vue",
-  "version": "0.1.1-beta.1",
+  "version": "0.1.2-beta.1",
   "private": false,
   "type": "module",
   "module": "umd/es/index.mjs",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@types/marked": "^5.0.1",
     "gray-matter": "^4.0.3",
-    "knot-vue": "^0.0.9-beta.1",
+    "knot-vue": "^0.1.1-beta.1",
     "pinia": "^2.1.6",
     "sass": "^1.66.1",
     "unplugin-vue-define-options": "1.2.1",

@@ -2260,6 +2260,21 @@ knot-vue@^0.0.9-beta.1:
     vue "^3.3.4"
     vue-router "^4.2.4"
 
+knot-vue@^0.1.1-beta.1:
+  version "0.1.1-beta.1"
+  resolved "https://registry.npmjs.org/knot-vue/-/knot-vue-0.1.1-beta.1.tgz#1313772b8da1e164dde3e96e5b81e2c48237c5c4"
+  integrity sha512-PcKiQdG5Nump5suvkn49DMl2I0Mt+pEIZ9mdIofR8VrpVJKvAtcOn5HsgrP32d+Yc6vACLtJjhgguw4Y64gLiw==
+  dependencies:
+    "@types/marked" "^5.0.1"
+    gray-matter "^4.0.3"
+    knot-vue "^0.0.9-beta.1"
+    pinia "^2.1.6"
+    sass "^1.66.1"
+    unplugin-vue-define-options "1.2.1"
+    vitepress "^1.0.0-rc.4"
+    vue "^3.3.4"
+    vue-router "^4.2.4"
+
 load-json-file@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/load-json-file/-/load-json-file-4.0.0.tgz"

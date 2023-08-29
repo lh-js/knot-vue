@@ -22,6 +22,11 @@ const router = createRouter({
       path: '/hello',
       name: 'hello',
       component: () => import('../views/hello/index.vue')
+    },
+    {
+      path: '/useVModel',
+      name: 'useVModel',
+      component: () => import('../views/useVModel/index.vue')
     }
   ]
 })

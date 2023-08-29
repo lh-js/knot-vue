@@ -4,7 +4,7 @@ type Props = { [propname: string]: any }
 
 const cacheMap = new WeakMap()
 
-function useVModel(props: Props, propName: string, emit: (emitFun: string, val: any) => void) {
+function useVModel(props: Props, propName: string, emit: (event: any, ...args: any[]) => void) {
     return computed({
         get() {
             if (cacheMap.has(props[propName])) {
