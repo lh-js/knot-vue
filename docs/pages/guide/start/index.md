@@ -6,15 +6,22 @@
 
 ## 安装
 
-```bash
+<CodeGroup>
+  <div title="npm" active>
+
+```sh
+# install in your project
 npm i knot-vue
 ```
+</div>
+<div title="yarn">
 
-or
-
-```bash
+```sh
+# install in your project
 yarn add knot-vue
 ```
+</div>
+</CodeGroup>
 
 ## 使用示例
 

@@ -8,7 +8,8 @@
       <hide-code v-else @click="codeClick(true)" />
     </div>
     <div :class="[{ 'code-show': isShowCode }, 'code-box']">
-      <div v-html="marked(props.code)"></div>
+      <!-- <div v-html="marked(props.code)"></div> -->
+      <slot name="code"></slot>
     </div>
   </div>
 </template>
@@ -16,31 +17,7 @@
 <script lang="ts" setup>
 import ShowCode from "./icon/show-code/index.vue";
 import HideCode from "./icon/hide-code/index.vue";
-import { onMounted, ref } from "vue";
-import { marked } from "marked";
-import hljs from "highlight.js";
-import "highlight.js/styles/foundation.css";
-
-export interface Props {
-  code: string;
-}
-const props = withDefaults(defineProps<Props>(), {
-  code: "",
-});
-
-onMounted(() => {
-  const render = new marked.Renderer();
-  marked.setOptions({
-    renderer: render, // 这是必填项
-    gfm: true, // 启动类似于Github样式的Markdown语法
-    pedantic: false, // 只解析符合Markdwon定义的，不修正Markdown的错误
-    sanitize: false, // 原始输出，忽略HTML标签（关闭后，可直接渲染HTML标签）
-
-    // 高亮的语法规范
-    highlight: (code, lang: any) =>
-      hljs.highlight(code, { language: lang }).value,
-  });
-});
+import { ref } from "vue";
 
 const isShowCode = ref(false);
 
@@ -94,10 +71,7 @@ const codeClick = (value: boolean) => {
     transition: 0.5s;
     box-sizing: border-box;
     overflow: hidden;
-
-    &:where(.code-show) {
-      padding: 10px;
-    }
+    margin: -16px 0;
   }
 }
 </style>

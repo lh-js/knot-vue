@@ -14,3 +14,5 @@ import data from '../../../../src/views/useHello/index.vue?raw'
 import { useHello } from 'knot-vue'
 const hello = useHello()
 </script>
+
+

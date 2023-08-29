@@ -43,6 +43,15 @@ export const sidebar: DefaultTheme.Sidebar = {
                 }
             ]
         },
+        {
+            text: 'v-model封装',
+            items: [
+                {
+                    text: 'useVModel',
+                    link: '/pages/hooks/useVModel/'
+                }
+            ]
+        },
     ],
     '/pages/utils/': [
         {
