@@ -29,6 +29,7 @@ const codeClick = (value: boolean) => {
     codeBox.value.style.height = `${height}px`;
     codeBox.value.offsetHeight;
     codeBox.value.style.height = 0;
+    codeBox.value.style.margin = 0;
     return;
   }
   codeBox.value.style.height = "auto";
@@ -36,6 +37,7 @@ const codeClick = (value: boolean) => {
   codeBox.value.style.height = 0;
   codeBox.value.offsetHeight;
   codeBox.value.style.height = `${height}px`;
+  codeBox.value.style.margin = '-16px 0';
 };
 
 const autoHeight = () => {
@@ -50,27 +52,33 @@ defineExpose({
 <style lang="scss" scoped>
 .component-card {
   width: 100%;
-  min-height: 140px;
+  height: auto;
   border: 1px solid #dcdfe6;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 
   .component-box {
     width: 100%;
     min-height: 100px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
     padding: 10px;
+
   }
 
   .util-box {
     width: 100%;
-    height: 40px;
+    min-height: 40px;
     border-top: 1px solid #dcdfe6;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding: 10px;
+
 
     &:where(.code-show) {
       border-bottom: 1px solid #dcdfe6;
@@ -82,7 +90,6 @@ defineExpose({
     transition: 0.5s;
     box-sizing: border-box;
     overflow: hidden;
-    margin: -16px 0;
   }
 }
 </style>

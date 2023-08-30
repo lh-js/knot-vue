@@ -46,7 +46,7 @@ const changeCodeTab = (tab: string) => {
   margin-bottom: -35px;
   background-color: #282c34;
   padding-bottom: 22px;
-  border-radius: 6px;
+  border-radius: 8px;
   padding-left: 10px;
   padding-top: 10px;
   margin-top: 10px;

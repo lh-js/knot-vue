@@ -33,12 +33,15 @@ features:
     title: 创意
     details: originality
     link: /
+    linkText: hello knot
   - icon: 🎨
     title: 易用
     details: Easy To Use
     link: /
+    linkText: UI library
   - icon: 🧩
     title: 丰富
     details: richness
     link: /
+    linkText: vue component
 ---

@@ -1,4 +1,5 @@
 import { type App } from "vue";
+import './src/style/common.scss'
 //组件
 import KnButton from "./src/components/kn-button/index.vue";
 import KnHello from './src/components/kn-hello/index.vue';
@@ -10,7 +11,7 @@ import hello from "./src/utils/hello";
 
 export { KnHello, KnButton };
 
-export { useHello,useVModel }
+export { useHello, useVModel }
 
 export { hello }
 

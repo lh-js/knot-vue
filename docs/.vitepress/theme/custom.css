@@ -35,4 +35,14 @@
   --vp-c-brand-lighter: var(--vp-c-purple-lighter);
   --vp-c-brand-dark: var(--vp-c-purple-dark);
   --vp-c-brand-darker: var(--vp-c-purple-darker);
+
+  /* 代码块颜色 */
+  /* --vp-code-block-bg: rgba(125,125,125,.04); */
 }
+
+/* .vp-doc div[class*='language-'], .vp-block {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+} */

@@ -1,5 +1,9 @@
 # useVModel
 
+### 用于封装表单组件的hooks
+
+注:父组件传入子组件的值暂时只能用ref定义，后续会考虑更好的方式修复
+
 ## 基本使用
 
 <ComponentCard ref="componentCard">
@@ -44,7 +48,7 @@ const model = useVModel(props, 'modelValue', emit)
 import KnForm from './components/kn-form/index.vue'
 import { ref } from 'vue'
 
-const modeValue = ref({
+const modeValue = ref({ //暂时只能用ref定义，后续会考虑更好的方式修复
   name: 'xx',
   password: 'xx',
 })

@@ -1,0 +1,10 @@
+@mixin button-theme($color) {
+    background-color: $color;
+    color: $white-color;
+}
+
+@mixin button-hover($color) {
+    color: $white-color;
+    border-color: $color;
+    background: rgba($color, 0.8);
+}
