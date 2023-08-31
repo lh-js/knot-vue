@@ -5,10 +5,6 @@
 <script lang="ts" setup>
 import { useVModel } from "knot-vue";
 
-type Model = {
-  name: string;
-  password: string;
-};
 const props = defineProps({
   modelValue: {
     type: Object,
