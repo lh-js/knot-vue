@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
-    "knot-vue": "^0.1.4-beta.1",
     "sass": "^1.66.1",
     "unplugin-vue-define-options": "1.2.1",
     "vitepress": "^1.0.0-rc.4",
