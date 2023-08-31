@@ -29,6 +29,14 @@ export const sidebar: DefaultTheme.Sidebar = {
                 {
                     text: 'button',
                     link: '/pages/components/button/'
+                },
+                {
+                    text: 'picture-group',
+                    link: '/pages/components/picture-group/'
+                },
+                {
+                    text: 'picture-group-pro',
+                    link: '/pages/components/picture-group-pro/'
                 }
             ]
         },
