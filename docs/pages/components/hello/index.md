@@ -2,17 +2,22 @@
 
 ## 基本使用
 
-<ComponentPreview componentPath="hello/base.vue">
+<ComponentCard>
+
+<template #component>
+<kn-hello />
+</template>
 <template #code>
 
 ```vue
 <template>
   <kn-hello />
-</template>  
+</template>
 
 <script setup lang="ts">
 import { KnHello } from 'knot-vue'
 </script>
 ```
+
 </template>
-</ComponentPreview>
+</ComponentCard>

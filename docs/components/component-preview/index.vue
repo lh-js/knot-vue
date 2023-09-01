@@ -19,7 +19,6 @@ import ShowCode from "./icon/show-code/index.vue";
 import HideCode from "./icon/hide-code/index.vue";
 import { defineAsyncComponent, ref, shallowRef } from "vue";
 
-
 type Props = {
   componentPath: string;
 };
@@ -27,9 +26,11 @@ const props = withDefaults(defineProps<Props>(), {
   componentPath: "",
 });
 
-const component = shallowRef<any>(null)
+const component = shallowRef<any>(null);
 
-component.value = defineAsyncComponent(() => import(/* @vite-ignore */`../../preview/${props.componentPath}`))
+component.value = defineAsyncComponent(
+  () => import(/* @vite-ignore */ `../../preview/${props.componentPath}`)
+);
 
 const isShowCode = ref(false);
 const codeBox = ref<any>(null);
@@ -50,7 +51,7 @@ const codeClick = (value: boolean) => {
   codeBox.value.style.height = 0;
   codeBox.value.offsetHeight;
   codeBox.value.style.height = `${height}px`;
-  codeBox.value.style.margin = '-16px 0';
+  codeBox.value.style.margin = "-16px 0";
 };
 
 const autoHeight = () => {
@@ -80,7 +81,6 @@ defineExpose({
     // align-items: center;
     justify-content: center;
     padding: 10px;
-
   }
 
   .util-box {
@@ -91,7 +91,6 @@ defineExpose({
     align-items: center;
     justify-content: flex-end;
     padding: 10px;
-
 
     &:where(.code-show) {
       border-bottom: 1px solid #dcdfe6;
