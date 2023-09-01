@@ -2,11 +2,7 @@
 
 ## 基本使用
 
-<ComponentCard>
-
-<template #component>
-  <kn-button>点击</kn-button>
-</template>
+<ComponentPreview componentPath="button/base.vue">
 <template #code>
 
 ```vue
@@ -18,23 +14,12 @@
 import { KnButton } from 'knot-vue'
 </script>
 ```
-
 </template>
-</ComponentCard>
+</ComponentPreview>
 
 ## 按钮类型
 
-<ComponentCard>
-
-<template #component>
-  <kn-button>点击</kn-button>
-  <kn-button type="dashed">点击</kn-button>
-  <kn-button type="text">点击</kn-button>
-  <kn-button type="primary">点击</kn-button>
-  <kn-button type="success">点击</kn-button>
-  <kn-button type="warning">点击</kn-button>
-  <kn-button type="danger">点击</kn-button>
-</template>
+<ComponentPreview componentPath="button/type.vue">
 <template #code>
 
 ```vue
@@ -52,17 +37,12 @@ import { KnButton } from 'knot-vue'
 import { KnButton } from 'knot-vue'
 </script>
 ```
-
 </template>
-</ComponentCard>
+</ComponentPreview>
 
 ## 禁用
 
-<ComponentCard>
-
-<template #component>
-<kn-button disabled>点击</kn-button>
-</template>
+<ComponentPreview componentPath="button/disabled.vue">
 <template #code>
 
 ```vue
@@ -74,21 +54,31 @@ import { KnButton } from 'knot-vue'
 import { KnButton } from 'knot-vue'
 </script>
 ```
-
 </template>
-</ComponentCard>
+</ComponentPreview>
+
 
 ## API
 
-属性名 | 描述 | 类型 | 是否必填 | 默认值
--------|------|------|-------|-------
-children | 按钮内容 | `string` | √ | `--`
-width | 宽度 | `number` | × | `74`
-height | 高度 | `string` | × | `34`
-type | 按钮类型 | `string` | × | `default`
-disabled | 是否禁用 | `boolean` | × | `false`
+<api />
+
+<!-- | 属性名   | 描述     | 类型      | 是否必填 | 默认值    |
+| -------- | -------- | --------- | -------- | --------- |
+| children | 按钮内容 | `string`  | √        | `--`      |
+| width    | 宽度     | `number`  | ×        | `74`      |
+| height   | 高度     | `string`  | ×        | `34`      |
+| type     | 按钮类型 | `string`  | ×        | `default` |
+| disabled | 是否禁用 | `boolean` | ×        | `false`   | -->
 
 ## event
-事件名 | 描述 | 类型 
--------|------|------
-@click | 按钮点击事件 | `()=>void` 
+
+<event />
+
+<!-- | 事件名 | 描述         | 类型   |
+| ------ | ------------ | ---------- |
+| @click | 按钮点击事件 | `()=>void` | -->
+
+<script setup>
+import api from '../../../preview/button/api.vue' 
+import event from '../../../preview/button/event.vue' 
+</script>

@@ -29,7 +29,12 @@ export const sidebar: DefaultTheme.Sidebar = {
                 {
                     text: 'button',
                     link: '/pages/components/button/'
-                },
+                }
+            ]
+        },
+        {
+            text: '数据展示',
+            items: [
                 {
                     text: 'picture-group',
                     link: '/pages/components/picture-group/'
@@ -37,6 +42,10 @@ export const sidebar: DefaultTheme.Sidebar = {
                 {
                     text: 'picture-group-pro',
                     link: '/pages/components/picture-group-pro/'
+                },
+                {
+                    text: 'table',
+                    link: '/pages/components/table/'
                 }
             ]
         },
