@@ -9,12 +9,13 @@ import KnTable from './src/components/kn-table/index.vue'
 //hooks
 import useHello from "./src/hooks/useHello/index";
 import useVModel from "./src/hooks/useVModel";
+import useComputed from "./src/hooks/useComputed";
 //utils
 import hello from "./src/utils/hello";
 
 export { KnHello, KnButton };
 
-export { useHello, useVModel }
+export { useHello, useVModel,useComputed }
 
 export { hello }
 

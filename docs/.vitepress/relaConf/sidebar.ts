@@ -69,6 +69,15 @@ export const sidebar: DefaultTheme.Sidebar = {
                 }
             ]
         },
+        {
+            text: 'computed封装',
+            items: [
+                {
+                    text: 'useComputed',
+                    link: '/pages/hooks/useComputed/'
+                }
+            ]
+        }
     ],
     '/pages/utils/': [
         {
