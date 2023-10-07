@@ -35,8 +35,8 @@ const buttonClick = () => {
 
 </script>
 <style lang="scss" scoped>
-@import '../../style/var.scss';
-@import '../../style/minxin.scss';
+@import '../../assets/style/var.scss';
+@import '../../assets/style/minxin.scss';
 .button {
   width: var(--width);
   height: var(--height);
