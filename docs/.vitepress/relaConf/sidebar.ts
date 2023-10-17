@@ -49,6 +49,16 @@ export const sidebar: DefaultTheme.Sidebar = {
                 }
             ]
         },
+        {
+            text: '交互反馈',
+            items: [
+                {
+                    text: 'loading',
+                    link: '/pages/components/loading/'
+                },
+
+            ]
+        },
     ],
     '/pages/hooks/': [
         {
