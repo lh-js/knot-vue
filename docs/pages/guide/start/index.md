@@ -39,7 +39,6 @@ yarn add knot-vue
 // main.ts
 
 import KnotVue from 'knot-vue'
-import 'knot-vue/umd/es/style.css'
 const app = createApp(App)
 
 app.use(KnotVue)
@@ -63,22 +62,6 @@ app.mount('#app')
 
 ### 按需引入
 
-注：按需引入记得引入样式
-<CodeGroup :codeTabs="['main.ts','index.vue']">
-<template #main.ts>
-
-```ts
-// main.ts
-
-import 'knot-vue/umd/es/style.css'
-const app = createApp(App)
-
-app.mount('#app')
-```
-
-</template>
-<template #index.vue>
-
 ```vue
 // index.vue
 
@@ -90,7 +73,3 @@ app.mount('#app')
 import { KnHello } from 'knot-vue'
 </script>
 ```
-
-</template>
-
-</CodeGroup>

@@ -14,7 +14,7 @@ import useComputed from "./src/hooks/useComputed";
 //utils
 import hello from "./src/utils/hello";
 
-export { KnHello, KnButton };
+export { KnHello, KnButton,KnPictureGroup,KnPictureGroupPro,KnTable,KnLoading };
 
 export { useHello, useVModel,useComputed }
 

@@ -50,7 +50,6 @@ yarn add knot-vue
 // main.ts
 
 import KnotVue from 'knot-vue'
-import 'knot-vue/umd/es/style.css'
 const app = createApp(App)
 
 app.use(KnotVue)
@@ -66,8 +65,6 @@ app.mount('#app')
 ```
 
 ### 按需引入
-
-注：按需引入也记得引入样式
 
 ```html
 // index.vue
