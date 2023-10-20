@@ -64,7 +64,7 @@ defineExpose({
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    // align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 10px;
 
