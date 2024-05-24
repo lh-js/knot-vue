@@ -46,6 +46,10 @@ export const sidebar: DefaultTheme.Sidebar = {
                 {
                     text: 'table',
                     link: '/pages/components/table/'
+                },
+                {
+                    text: 'tree',
+                    link: '/pages/components/tree/'
                 }
             ]
         },

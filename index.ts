@@ -7,6 +7,7 @@ import KnPictureGroup from './src/components/kn-picture-group/index.vue'
 import KnPictureGroupPro from './src/components/kn-picture-group-pro/index.vue'
 import KnTable from './src/components/kn-table/index.vue'
 import KnLoading from './src/components/kn-loading/index.vue'
+import KnTree from './src/components/kn-tree/index.vue'
 //hooks
 import useHello from "./src/hooks/useHello/index";
 import useVModel from "./src/hooks/useVModel";
@@ -28,5 +29,6 @@ export default {
     app.component("KnPictureGroupPro",KnPictureGroupPro);
     app.component("KnTable",KnTable);
     app.component('KnLoading',KnLoading);
+    app.component("KnTree",KnTree);
   },
 };
