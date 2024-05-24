@@ -5,13 +5,13 @@
 <ComponentCard>
 
 <template #component>
-<kn-tree :data=data  />
+<kn-tree :data=data />
 </template>
 <template #code>
 
 ```vue
 <template>
-  <kn-tree :data=data  />
+  <kn-tree :data=data />
 </template>
 
 <script setup>
@@ -48,7 +48,6 @@ const data = ref([
             checked: true
           },
         ],
-
       }
     ]
   }
@@ -93,7 +92,6 @@ const data = ref([
             checked: true
           },
         ],
-
       }
     ]
   }
