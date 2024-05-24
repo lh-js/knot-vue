@@ -85,3 +85,6 @@ https://lh-js.github.io/knot-vue
 ## 参与贡献
 
 1.Fork 本仓库 <br/><br/>2.新建 Feat_xxx 分支 <br/><br/>3.提交代码 <br/><br/>4.新建 Pull Request
+
+## 启动项目
+1.安装node_modules包(yarn install)<br/><br/>2.设置本地npm目录指向src目录(npm link ./src)<br/><br/>3.启动项目(yarn docs:dev)
