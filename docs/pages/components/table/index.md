@@ -194,7 +194,21 @@ const dataSource = [
 </template>
 </ComponentCard>
 
+## API
+
+<api />
+
+## Column
+
+<column />
+
+## API
+
+<api />
+
 <script setup>
+  import api from '../../../word/components/table/api.vue'
+  import column from '../../../word/components/table/column.vue'
     const columns = [{
         title:"姓名",
         dataIndex:"name",

@@ -50,6 +50,10 @@ export const sidebar: DefaultTheme.Sidebar = {
                 {
                     text: 'tree',
                     link: '/pages/components/tree/'
+                },
+                {
+                    text: 'format-json',
+                    link: '/pages/components/format-json/'
                 }
             ]
         },
@@ -100,6 +104,15 @@ export const sidebar: DefaultTheme.Sidebar = {
                 {
                     text: 'hello',
                     link: '/pages/utils/hello/'
+                }
+            ]
+        },
+        {
+            text: '列表转树',
+            items: [
+                {
+                    text: 'listToTree',
+                    link: '/pages/utils/listToTree/'
                 }
             ]
         },

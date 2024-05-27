@@ -99,6 +99,6 @@ import { KnButton } from 'knot-vue'
 | @click | 按钮点击事件 | `()=>void` | -->
 
 <script setup>
-import api from '../../../preview/button/api.vue' 
-import event from '../../../preview/button/event.vue' 
+import api from '../../../word/components/button/api.vue' 
+import event from '../../../word/components/button/event.vue' 
 </script>

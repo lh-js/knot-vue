@@ -5,6 +5,7 @@
     "src/**/*",
     "src/**/*.vue",
     "src/**/**/*.vue",
+    "/src/**/**/*.vue",
     "index.ts"
   ],
   "exclude": [
